@@ -1,0 +1,136 @@
+/*
+---- 01- Typography System
+
+-- Font Sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-- font weight 
+Default: 500
+medium: 
+bold: 700
+
+--Line height
+Default: 1
+small: 1.35
+medium: 
+big: 1.5
+
+--letter-spacing
+small: 
+
+
+
+---- 02 COLORS
+
+- Primary: 
+- Tints: 
+
+- Shades: 
+- Accents: 
+- Greys: 
+
+
+
+---- 03 SHADOWS 
+
+---- 04 BORDER-RADIUS
+Default: 15px
+medium: 
+
+
+---- 05 WHITESPACE
+padding: 
+sml-whitespace: 1rem
+large-whitespace: 
+medium whitespace: 2rem
+
+
+-Spacing system(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  background-color: #d6e2f0;
+}
+
+/***********  *********/
+/***********  *********/
+.card-container {
+    display: flex;
+    justify-content: center;
+    padding: 6rem 3.2rem;
+}
+.qr-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  width: 30rem;
+  background-color: #fff;
+  padding: 1.6rem;
+  padding-bottom: 3.2rem;
+  border-radius: 15px;
+}
+.card-img {
+  width: 100%;
+  display: block;
+  border-radius: inherit;
+}
+
+.card-text-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.main-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1f3251;
+}
+.text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #7b879d;
+}
+::first-letter{
+    text-transform: capitalize;
+}
+
+@media (max-width: 34em){
+  html{
+    /* 12px / 16 = 75% */
+    font-size: 75%;
+  }
+  .card-container{
+    padding: 6rem 1.8rem;
+  }
+  .qr-card{
+    padding: 1rem 1rem 2.8rem 1rem;
+  }
+  .card-text-box{
+    padding: 0 1.6rem;
+  }
+  .main-heading{
+    font-size: 1.6rem;
+  }
+  .text{
+    font-size: 1rem;
+  }
+  .qr-card{
+    width: 40rem;
+  }
+
+}
